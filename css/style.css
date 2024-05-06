@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    border: burlywood solid 2px;
+    width: fit-content;
+    height: fit-content;
+}
