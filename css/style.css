@@ -16,28 +16,6 @@ img {
     display: block; 
 }
 
-.imgdiv {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 50%;
-    height: 80vh;
-}
-
-.about {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 50%;
-    height: 80vh;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .profilephoto {
     display: flex;
     align-content: center;
@@ -45,15 +23,42 @@ img {
     width: 450px;
 }
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+/* Animation for placeholder-glow */
+.placeholder-glow {
+    animation: glow-animation 2s infinite alternate;
+  }
+  
+  @keyframes glow-animation {
+    0% {
+      color: #ffffff; /* Start color (white) */
+      text-shadow: 0 0 10px #ffffff; /* Start glow effect */
+    }
+    100% {
+      color: #00ffff; /* End color (cyan) */
+      text-shadow: 0 0 20px #00ffff; /* End glow effect */
+    }
+  }
+  
+  /* Animation for placeholder-wave */
+  .placeholder-wave {
+    animation: wave-animation 2s infinite alternate;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(10px); /* Start position */
+    }
+    100% {
+      transform: translateX(10px); /* End position */
+    }
+  }
+  
+.about {
+    display: flex;
+    align-content: center;
 }
 
-p {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
+
 
 
 
