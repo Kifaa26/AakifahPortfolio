@@ -5,8 +5,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-table{
-    border: burlywood solid 2px;
-    width: fit-content;
-    height: fit-content;
+
+body {
+    background-color:rgb(5, 5, 32); 
 }
+  
+img {
+    width: 15%; 
+    height: auto; 
+    display: block; 
+}
+
+.imgdiv {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50%;
+    height: 80vh;
+}
+
+.about {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50%;
+    height: 80vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilephoto {
+    display: flex;
+    align-content: center;
+    height: 400px;
+    width: 450px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+
+
+
