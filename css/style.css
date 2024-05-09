@@ -6,56 +6,72 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color:rgb(5, 5, 32); 
-}
-  
-img {
-    width: 15%; 
-    height: auto; 
-    display: block; 
+/* Navbar */
+.font {
+    font-family: sans-serif;
 }
 
-.profilephoto {
-    display: flex;
-    align-content: center;
-    height: 400px;
-    width: 450px;
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap');
+
+body{
+    font-family: Sora, "sans-serif";
+    line-height: 1,8;
+    color: rgb(6, 6, 39);
+    font-size: larger;
 }
 
-/* Animation for placeholder-glow */
-.placeholder-glow {
-    animation: glow-animation 2s infinite alternate;
-  }
-  
-  @keyframes glow-animation {
-    0% {
-      color: #ffffff; /* Start color (white) */
-      text-shadow: 0 0 10px #ffffff; /* Start glow effect */
-    }
-    100% {
-      color: #00ffff; /* End color (cyan) */
-      text-shadow: 0 0 20px #00ffff; /* End glow effect */
-    }
-  }
-  
-  /* Animation for placeholder-wave */
-  .placeholder-wave {
-    animation: wave-animation 2s infinite alternate;
-  }
-  
-  @keyframes wave-animation {
-    0% {
-      transform: translateX(10px); /* Start position */
-    }
-    100% {
-      transform: translateX(10px); /* End position */
-    }
-  }
-  
-.about {
-    display: flex;
-    align-content: center;
+h1,h2,h3,h4,h5,h6,
+.display-4 {
+    color: rgb(54, 54, 56);
+    font-weight: 700;
+}
+
+a {
+    color: rgb(16, 16, 107)
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+.hero {
+    background-image: url(https://i.pinimg.com/564x/db/22/1d/db221dfdcaf9ff0406d43066f05f9ec8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 2, 22, 0.745);
+  z-index: -1;
+}
+
+.profile {
+  height: 80%;
+  width: 60%;
+}
+
+section {
+  height: 100vh;
+}
+
+.custom-list {
+  list-style: none;
+}
+
+section h3, h4 {
+  color: white;
 }
 
 
