@@ -37,6 +37,12 @@ a {
 
 }
 
+.col-6{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .hero {
     background-image: url(https://i.pinimg.com/564x/db/22/1d/db221dfdcaf9ff0406d43066f05f9ec8.jpg);
     background-position: center;
@@ -76,38 +82,62 @@ section h3, h4 {
   color: white;
 }
 
+/* Flip card container */
+.flip-card {
+  perspective: 1000px; /* Add perspective for the 3D effect */
+  margin-bottom: 20px; /* Adjust spacing between flip cards */
+  height: 300px;
+}
+
+/* Inner container for the flip card */
 .flip-card-inner {
-    width: 100%;
-    height: 300px; /* Set height for the flip card */
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flip the card on hover */
-  }
+/* Front side of the flip card */
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
 
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+/* Style for the front side */
+.flip-card-front {
+  position: absolute;
+  background-color: #0a0530; /* Front side background color */
+  padding: 30px; /* Padding for front side content */
+}
 
-  .flip-card-front {
-    background-color: #090531;
-    color: rgb(255, 255, 255);
-  }
+/* Style for the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  background-color: #126f8b; /* Back side background color */
+  padding: 30px; /* Padding for back side content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for back side */
+}
 
-  .flip-card-back {
-    background-color: #777575;
-    color: rgb(255, 255, 255);
-    transform: rotateY(180deg);
-  }
+/* On hover, flip the card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Heading style */
+.flip-card h3 {
+  margin-bottom: 10px; /* Adjust spacing between heading and content */
+  color: #ffffff; /* Heading color */
+}
+
+/* Content style */
+.flip-card p {
+  color: #fdfdfd; /* Text color */
+}
+
+
   
 .carousel-item {
     text-align: center;
@@ -130,24 +160,6 @@ section h3, h4 {
     100% { transform: translateY(0); }
   }
 
-  .soft-skills-card {
-    background-color: #1d1d6e;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.979);
-  }
-
-  .skill-item {
-    list-style: none;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .skill-item i {
-    color: #090442;
-    margin-right: 5px;
-  }
 
   .carousel-item {
     transition: opacity 1s ease-in-out;
@@ -161,6 +173,33 @@ section h3, h4 {
   .custom-submit-button {
     background-color: #b30c0c !important;
 }
+
+.contact-details {
+  text-align: center;
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+.contact-details h2 {
+  color: #0a0639; 
+}
+
+.contact-details ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 10px; 
+  font-size: 18px; 
+  color: #555; 
+}
+
+.contact-details li i {
+  margin-right: 10px; 
+  color: #050e3f; 
+}
  
 footer {
     background-color: #f8f9fa;
@@ -171,8 +210,13 @@ footer {
     width: 100%;
   }
 
-
-
-
+  #Testimonials {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+  }
+  
+   .testimonial-card {
+    margin-bottom: 20px; 
+  }
 
 
